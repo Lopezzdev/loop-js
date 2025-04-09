@@ -1,0 +1,261 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    display: flex;
+    height: 100%;
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200; /* Regular */
+}
+
+#contenedor,#bpm{
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    border: rgba(255, 150, 12, 0.788) solid 1px;
+}
+
+#play{
+    background-color: rgba(255, 0, 0, 0.774);
+    text-align: center;
+    color:white;
+    padding: 10px;
+    width: 59px;
+    height: 20px;
+    margin-top:-1px;
+    position:absolute;
+    right: 0px;  
+    background-image: url(https://icons.veryicon.com/png/o/internet--web/web-video-clip/play-332.png);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    /* border: rgb(255, 0, 0) solid 2px; */
+
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+
+#matriz{
+    /* border: rgba(255, 150, 12, 0.788) solid 1px; */
+    position:relative;
+    background-color: black;
+}
+#pagina{
+    position:relative;
+}
+
+#tiempo{
+    height: 100%;
+    width: 1px;
+    background-color: rgba(255, 100, 100, 0.836);
+    position:absolute;
+    top:0px;
+}
+
+#contenedor{
+    width: 880px;
+    /* height: 440px; */
+    position:relative;
+    display: flex;
+    overflow: hidden;
+    z-index:2;
+}
+
+#prueba{
+    background-color: white;
+    height: 50px;
+    width: 100px;
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+
+#seteos{
+    /* background-color: rgba(255, 123, 0, 0.74); */
+    width: 80px;
+    height: 442px;
+    display: flex;
+}
+
+#canal1{
+    background-color: rgba(189,91,0);
+    border-right: rgba(46, 46, 46, 0.788) solid 1px;
+    border-left: rgba(46, 46, 46, 0.788) solid 2px;
+}
+
+#canal2{
+    background-color: rgba(152, 0, 0);
+}
+
+#canal1,#canal2{
+    width: 50%;
+    height: 100%;
+    position:relative;
+    /* background-color: red; */
+    /* border: rgba(255, 150, 12, 0.788) solid 1px; */
+}
+
+#play01,#play02{top:-1px;}
+#play11,#play12{top:180px;}
+#play21,#play22{top:361px;}
+#play31,#play32{top:381px;}
+#play41,#play42{top:401px;}
+#play51,#play52{top:421px;}
+
+.control{
+    border-bottom: 1px black solid;
+    display: flex;
+    /* align-items: center; */
+}
+.plays{
+    border-top:solid 1px rgba(0, 0, 0, 0.514);
+    /* background-image: url(https://icons.veryicon.com/png/o/internet--web/web-video-clip/play-332.png); */
+    background-image: url(https://icons.iconarchive.com/icons/icons8/ios7/512/Music-Music-icon.png);
+    background-position: center;
+    background-size: 13px;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height:20px;
+    background-color: rgba(0, 0, 0, 0.185);
+    position:absolute;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    /* animation-name: animacion; */
+}
+@keyframes animacion {
+    0% {opacity : 1;}
+    50% {opacity: 0.5;}
+}
+
+#bpm{
+    border: rgba(201,118,9) solid 1px;
+    color: white;
+    font-size: 10px;
+    width: 50px;
+    text-align: center;
+    padding: 1px;
+    position:relative;
+    top:1px;
+    left:0px;
+    user-select: none; /* Evita la selección de texto */
+    cursor: default;
+}
+
+#slideBPM{
+    position:absolute;
+    top:20px;
+    /* width: 80px; */
+}
+
+#controles{
+    position:absolute;
+    left:881px;
+}
+
+#controles div{
+    width: 40px;
+    height:30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#cambioCanal{
+    background-color: rgba(255, 123, 0, 0.74);
+    background-image: url(https://cdn-icons-png.flaticon.com/512/25/25344.png);
+    background-size: 23px;
+}
+#volumenes{
+    background-color: rgba(184, 184, 184, 0.74);
+    background-image: url(https://cdn-icons-png.flaticon.com/512/44/44763.png);
+    background-size: 20px;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    /* animation-name: animacion; */
+}
+#borrar{
+    background-color: rgba(78, 78, 78, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imgBorrar{
+    width: 20px;
+    height: 20px;
+
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+}
+@keyframes animacion2 {
+    0% {transform : rotate(0deg);}
+    50% {transform : rotate(180deg) scale(0.8);}
+    100% {transform: rotate(360deg);}
+}
+
+#divVolumenes{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    left:800px;
+    top:180px;
+}
+#divVolumenes input{
+    width: 80px;
+    position:relative;
+}
+
+#volBajo{top:-5px;}
+#volSint{top:168px;}
+#volBombo{top:183px;}
+#volPalma{top:193px;}
+#volHihat{top:203px;}
+#volAro{top:213px;}
+
+input[type="range"] { 
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4);
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 10px;
+    width: 200px;
+    cursor: pointer;
+	border-radius: 5px;
+}
+
+::-webkit-slider-runnable-track {
+    background: #3a3a3a;
+}
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px; /* 1 */
+    height: 10px;
+    border-radius: 50%;
+    background: #000000;
+    box-shadow: -100px 0px 0px 95px rgb(207, 100, 0); /* 2 */
+    border: 1px solid #7e7e7e;
+}
+
+input[type="range"]:hover { 
+    transform: scale(1.05);
+    transition: transform 0.25s;
+}

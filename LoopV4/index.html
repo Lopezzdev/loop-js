@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops JS</title>
+   
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/44/44763.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <div id="pagina">
+
+        <div id="bpm">120 BPM</div>
+
+        <input type="range" id="slideBPM" min="80" max="160" value="120">
+
+        <div id="controles">
+
+            <div id="cambioCanal"></div>
+            <div id="volumenes"></div>
+            <div id="borrar">
+                <img id="imgBorrar" src="https://cdn-icons-png.flaticon.com/512/25/25465.png" alt="">
+            </div>
+
+        </div>
+
+        <div id="divVolumenes">
+            <input type="range" id="volBajo" min="0" max="100" value="100">
+            <input type="range" id="volSint" min="0" max="100" value="100">
+            <input type="range" id="volBombo" min="0" max="100" value="100">
+            <input type="range" id="volPalma" min="0" max="100" value="100">
+            <input type="range" id="volHihat" min="0" max="100" value="100">
+            <input type="range" id="volAro" min="0" max="100" value="50">
+        </div>
+        
+
+        <div id="contenedor">
+
+            <!-- <canvas id="matriz" width="800" height="440"></canvas> -->
+            <canvas id="matriz" width="800" height="439"></canvas>
+            <div id="tiempo"></div>
+
+            <div id="seteos">
+
+                <div id="canal1">
+
+                    <!-- Bajo -->
+                        <div id="play01" class="plays"></div>
+                    <!-- Sintetizador -->
+                        <div id="play11" class="plays"></div>
+                    <!-- Bombo -->
+                        <div id="play21" class="plays"></div>
+                    <!-- Palmas -->
+                        <div id="play31" class="plays"></div>
+                    <!-- Hihat -->
+                        <div id="play41" class="plays"></div>
+                    <!-- Aro -->
+                        <div id="play51" class="plays"></div>
+
+                </div>
+
+                <div id="canal2">
+
+                        <div id="play02" class="boton plays"></div>
+                        <div id="play12" class="boton plays"></div>
+                        <div id="play22" class="boton plays"></div>
+                        <div id="play32" class="boton plays"></div>
+                        <div id="play42" class="boton plays"></div>
+                        <div id="play52" class="boton plays"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="play"></div>
+
+    </div>
+
+    <div id="prueba"></div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
