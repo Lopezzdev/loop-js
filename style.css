@@ -5,7 +5,9 @@
 html{
     display: flex;
     height: 100%;
-    width: 100%;    
+    min-height: 600px;
+    min-width: 1050px;
+    /* min-width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +50,7 @@ html{
 }
 #pagina{
     position:relative;
+    width: 882px;
 }
 
 #tiempo{
